@@ -1,0 +1,1 @@
+node "C:\Users\Sam\Documents\My Games\Project 5 AM\node_modules\http-server\bin\http-server"
