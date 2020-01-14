@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"/>
+  <link rel="icon" type="image/png" href="images/zuffy2.png"/>
   <title>Project 5 AM</title>
 </head>
   <script src="pixi.min.js"></script>
@@ -13,6 +14,16 @@
 
     //Add the canvas that Pixi automatically created for you to the HTML document
     document.body.appendChild(app.view);
+
+    PIXI.loader
+      .add("images/zuffy2.png")
+      .load(setup);
+
+    function setup() {
+      let zuffy = new PIXI.Sprite(PIXI.loader.resources["images/zuffy2.png"].texture);   
+      app.stage.addChild(zuffy);
+    }
+
   </script>
 </body>
 </html>
